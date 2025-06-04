@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lunar Gradle - Book Your Stay</title>
+  <!-- Use Flask URL builder to load CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='booking.css') }}">
+</head>
+<body>
+  <div class="background-overlay">
+    <nav>
+      <ul>
+        <!-- Adjust links as needed; using relative paths or Flask routes is recommended -->
+        <li><a href="C:\Users\Admin\OneDrive - Shri Vile Parle Kelavani Mandal\Productivity\Iram\College\Years\Year 4\SEM VIII\DBMS\Project\Codes\Mohit\DBMS PROJ\DBMS PROJ\ROOMS.html">Rooms</a></li>
+            <li><a href="http://127.0.0.1:5000/restaurant">Restaurant</a></li>
+            <li><a href="C:\Users\Admin\OneDrive - Shri Vile Parle Kelavani Mandal\Productivity\Iram\College\Years\Year 4\SEM VIII\DBMS\Project\Codes\Iram DBMS Project\Laundry Page\laundry.html">Laundry</a></li>
+            <li><a href="C:\Users\Admin\OneDrive - Shri Vile Parle Kelavani Mandal\Productivity\Iram\College\Years\Year 4\SEM VIII\DBMS\Project\Codes\Iram DBMS Project\Spa Page\spa.html">Spa</a></li>
+            <li><a href="C:\Users\Admin\OneDrive - Shri Vile Parle Kelavani Mandal\Productivity\Iram\College\Years\Year 4\SEM VIII\DBMS\Project\Codes\Mohit\DBMS PROJ\DBMS PROJ\feedbackpage.html">Feedback</a></li>
+            <li><a href="http://127.0.0.1:5000/">Registration</a></li>
+            <li><a href="http://127.0.0.1:5000/booking">Booking</a></li>
+      </ul>
+    </nav>
+
+    <section class="booking-hero">
+      <div>
+        <h1>Book Your Stay at The Lunar Gradle</h1>
+        <p>Reserve your escape to luxury and comfort.</p>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>Booking Details</h2>
+      <!-- Set method to POST and action to /booking -->
+      <form id="booking-form" method="POST" action="/booking">
+        <div class="form-group">
+          <label for="primary-guest">Primary Guest Name:</label>
+          <input type="text" id="primary-guest" name="primary-guest" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="guests">Number of Accompanying Members:</label>
+          <input type="number" id="guests" name="guests" min="0" max="20" placeholder="0-20" required>
+        </div>
+        <div class="form-group">
+          <label for="check-in">Check-In Date:</label>
+          <input type="date" id="check-in" name="check-in" required>
+        </div>
+        <div class="form-group">
+          <label for="check-out">Check-Out Date:</label>
+          <input type="date" id="check-out" name="check-out" required>
+        </div>
+        <div class="form-group">
+          <label for="nights">Number of Nights:</label>
+          <input type="number" id="nights" name="nights" min="1" placeholder="Enter number of nights" required>
+        </div>
+        <button type="submit" id="book-btn">Book Now</button>
+        <a href="/rooms" class="choose-room-btn">Choose Room</a>
+      </form>
+      <div id="booking-status" class="hidden"></div>
+    </section>
+
+    <footer>
+      <p>© 2025 The Lunar Gradle. All rights reserved.</p>
+    </footer>
+  </div>
+  <!-- Use Flask URL builder to load JS -->
+  <script src="{{ url_for('static', filename='booking.js') }}"></script>
+</body>
+</html>

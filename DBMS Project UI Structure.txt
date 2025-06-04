@@ -1,0 +1,45 @@
+DBMS Project:
+1. Register Page (Not a member) ------------ Iram
+- Input First name
+- Input Middle name
+- Input Last Name
+- Input Email ID
+- Input the type of ID Proof you are submitting
+- Input the date of birth
+- Input the number of members accompanying
+- Register button
+
+2. Login Page (Already a member) ------------ Mohit
+- Email ID
+- OTP
+- Login button
+
+3. Home page ------------ Iram
+- redirect to Rooms page
+- redirect to Restaurant page
+-redirect to Services ( include laundry and spa) page
+- redirect to Feedback page
+
+4. Room page ------------ Mohit
+- Drop down for the different types of room types available
+- Photo slider for each room type
+- Price for each type of room per night
+- Next button
+
+5. Booking Page ------------ Mohit
+- Number of members accompanying
+- Calendar for check In date input
+- calendar for check out date input
+- Number of nights
+
+6. Payment Page (Razor Pay) ------------ Iram
+
+7. Restaurant Page ------------  Iram
+- Primary member name
+- Number of guests
+- Menu option ( will direct to a menu pdf)
+
+8. Feedback ------------  Mohit
+- Text box for comments
+- stars out of 5
+

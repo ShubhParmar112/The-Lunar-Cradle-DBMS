@@ -1,0 +1,21 @@
+List Of Pages:
+
+Booking Page ------ Connection to the database, Room page
+
+Payment Page ------ Thank you page
+
+Home Page ------ NONE
+
+Laundry Page ------ NONE
+
+Registration Page ------ Connection to the database
+
+Restaurant Page ------ NONE
+
+Spa Page ------ NONE
+
+Feedback Page ------- NONE
+
+Rooms Page ----- Payment page
+
+Thank you Page ----- NONE

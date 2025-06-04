@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Lunar Gradle - Restaurant</title>
+    <!-- Load CSS via Flask's static folder -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="C:\Users\Admin\OneDrive - Shri Vile Parle Kelavani Mandal\Productivity\Iram\College\Years\Year 4\SEM VIII\DBMS\Project\Codes\Mohit\DBMS PROJ\DBMS PROJ\ROOMS.html">Rooms</a></li>
+            <li><a href="http://127.0.0.1:5000/restaurant">Restaurant</a></li>
+            <li><a href="C:\Users\Admin\OneDrive - Shri Vile Parle Kelavani Mandal\Productivity\Iram\College\Years\Year 4\SEM VIII\DBMS\Project\Codes\Iram DBMS Project\Laundry Page\laundry.html">Laundry</a></li>
+            <li><a href="C:\Users\Admin\OneDrive - Shri Vile Parle Kelavani Mandal\Productivity\Iram\College\Years\Year 4\SEM VIII\DBMS\Project\Codes\Iram DBMS Project\Spa Page\spa.html">Spa</a></li>
+            <li><a href="C:\Users\Admin\OneDrive - Shri Vile Parle Kelavani Mandal\Productivity\Iram\College\Years\Year 4\SEM VIII\DBMS\Project\Codes\Mohit\DBMS PROJ\DBMS PROJ\feedbackpage.html">Feedback</a></li>
+            <li><a href="http://127.0.0.1:5000/">Registration</a></li>
+            <li><a href="http://127.0.0.1:5000/booking">Booking</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <h1>Dine at The Lunar Gradle</h1>
+            <p>Savor exquisite flavors in an elegant setting.</p>
+        </div>
+    </section>
+
+    <section class="content">
+        <h2>Make a Reservation</h2>
+        <!-- Form now submits via POST to the /restaurant route -->
+        <form id="reservation-form" method="POST" action="/restaurant">
+            <div class="form-group">
+                <label for="primary-member">Primary Member Name:</label>
+                <input type="text" id="primary-member" name="primary-member" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="guests">Number of Guests:</label>
+                <input type="number" id="guests" name="guests" min="1" max="20" placeholder="1-20" required>
+            </div>
+            <button type="submit">Submit Reservation</button>
+        </form>
+        <!-- This div can be used to show server-side flash messages if needed -->
+        <div id="confirmation" class="hidden"></div>
+        <p class="menu-link">Explore our <a href="{{ url_for('static', filename='menu.pdf') }}" target="_blank">Restaurant Menu (PDF)</a></p>
+    </section>
+
+    <footer>
+        <p>© 2025 The Lunar Gradle. All rights reserved.</p>
+    </footer>
+
+    <!-- Load JS via Flask's static folder -->
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+    <!-- The Cloudflare script snippet can be left if needed -->
+    <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'91b0f9ad3f56b03c',t:'MTc0MTA4NzEzMS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script>
+</body>
+</html>
